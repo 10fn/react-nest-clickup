@@ -13,9 +13,9 @@ datasource db {
 model Task {
   id           Int       @id @default(autoincrement())
   title        String
-  description  String
+  description  String?
   dueDate      DateTime?
-  status       String
+  status       String?
   userId       String
-  parentTaskId String
+  parentTaskId String?
 }
